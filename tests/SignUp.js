@@ -6,7 +6,7 @@ const { titleContains } = require("selenium-webdriver/lib/until");
     await driver.navigate().to("https://courses.ultimateqa.com/users/sign_up");
     await driver.findElement(By.id("user[first_name]")).sendKeys("sudha");
     await driver.findElement(By.id("user[last_name]")).sendKeys("secret_sauce");
-    await driver.findElement(By.id('user[email]')).sendKeys('sudha@gmail.com')
+    await driver.findElement(By.id('user[email]')).sendKeys('sudha22@gmail.com')
     await driver.findElement(By.id('user[password]')).sendKeys('sudhA123')
     await driver.findElement(By.id('user[terms]')).click()
     await driver.findElement(By.className("button button-primary g-recaptcha")).click();
