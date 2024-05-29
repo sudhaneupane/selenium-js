@@ -5,8 +5,8 @@ async function loginTest() {
   try {
     await driver.navigate().to("https://www.facebook.com/");
 
-    await driver.findElement(By.id("email")).sendKeys("s@outlook.com");
-    await driver.findElement(By.id("pass")).sendKeys("133456789");
+    await driver.findElement(By.id("email")).sendKeys("");
+    await driver.findElement(By.id("pass")).sendKeys("");
     await driver.findElement(By.name("login")).click();
 
     const pageTitle = await driver.getTitle();
